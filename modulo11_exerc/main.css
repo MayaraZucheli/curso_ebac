@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header,
+section h2,
+section h3 {
+    font-family: "pestofresco", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "pestofresco", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header {
+    padding: 20px 0;
+    background-color: orangered;
+    color: antiquewhite;
+    border-bottom: 4px solid rgb(26, 125, 231);
+    margin-bottom: 56px;
+    font-size: 24px;
+}
+
+#about-store {
+    font-size: 25px;
+}
+
+
+header > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.book-store {
+    margin-right: 32px;
+    height: 320px;
+    border-radius: 2%;
+}
+
+section {
+    padding: 48px;
+}
+
+section h2 {
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.product {
+    display: grid;
+    max-width: 100%;
+    margin-right: 0;
+}
+
+p {
+    display: block;
+}
+
+.product-book {
+    padding: 60px 0;
+}
+
+.book-list {
+    flex-wrap: wrap;
+}
+
+.book-list li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.book-list li img {
+    max-width: 100%;
+}
+
+.book-list li h3 {
+    margin: 16px 0;
+}
+
+.book-list li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: aquamarine;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container .book-list img {
+    max-width:300px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+}
+
+
+@media screen and (max-width: 767px){
+    .container {
+        display: block;
+        max-width: 90%;
+        font-size: 1.5em;
+        margin-right: 0;
+    }
+
+    .book-store {
+        width: auto;
+        height: auto;
+    }
+
+    .book-list {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container {
+        max-width: 90%;
+        font-size: 1.5em;
+        margin-right: 0;
+    }
+}
+
